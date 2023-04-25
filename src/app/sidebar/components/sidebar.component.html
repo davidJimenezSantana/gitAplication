@@ -1,0 +1,11 @@
+<div class="sidebar-gif">
+    <h3 class="text-center">Historial</h3>
+    <hr>
+    <div>
+        <div class="list-group list-group-flush">
+            <button *ngFor="let tag of verHistorial()" type="button" class="btn btn-secondary mb-1" aria-current="true">
+                {{tag | titlecase}}
+            </button>            
+        </div>
+    </div>
+</div>

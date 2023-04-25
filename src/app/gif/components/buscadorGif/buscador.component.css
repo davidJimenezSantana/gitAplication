@@ -1,0 +1,13 @@
+.buscador-gif {
+    margin-left: 10px;
+    width        : 90%;
+    border-radius: 10px;
+    border       : 1px solid black;
+    box-shadow   : 0px 2px 4px 0px #000000;
+}
+
+.content-buscador {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+}
