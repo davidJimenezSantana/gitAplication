@@ -3,20 +3,25 @@ import { NgModule } from "@angular/core";
 import { homePageComponente } from "./pages/home-page.component";
 import { buscadorComponent } from './components/buscadorGif/buscador.component';
 import { listaComponen } from "./components/listaGif/lista.component";
+import { cardGifComponent } from "./components/cardGif/cardGif.component";
+import { sharedModule } from "../shared/shared.module";
+
 
 @NgModule({
-    declarations:[
+    declarations: [
         homePageComponente,
         buscadorComponent,
-        listaComponen
+        listaComponen,
+        cardGifComponent
     ],
-    imports:[
-        CommonModule
+    imports: [
+        CommonModule,
+        sharedModule
     ],
-    exports:[
+    exports: [
         homePageComponente
     ]
 })
-export class gifModule{
+export class gifModule {
 
 } 

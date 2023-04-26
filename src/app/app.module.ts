@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { gifModule } from './gif/gif.module';
 import { sidebarModule } from './sidebar/sidebar.module';
+import { sharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [

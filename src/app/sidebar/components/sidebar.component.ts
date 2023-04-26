@@ -1,5 +1,6 @@
+import { ElementRef, ViewChild } from '@angular/core';
 import { Component } from '@angular/core';
-import { historyTagService } from '../../gif/services/historyTag.service';
+import { gifService } from '../../gif/services/gif.service';
 
 @Component({
     selector: 'sidebar-comp',
@@ -7,9 +8,15 @@ import { historyTagService } from '../../gif/services/historyTag.service';
     styleUrls: ['./sidebar.component.css']    
 })
 export class sidebarComponente{
-    constructor(private historyTagService: historyTagService){}
+
+    constructor(private gifService: gifService){}
+
 
     verHistorial():string[]{
-        return this.historyTagService.gethistoryTag();
+        return this.gifService.gethistoryTag();
+    }
+
+    buscarGif(tag:string){
+        this.gifService.buscarGif(tag);
     }
 }

@@ -1,0 +1,9 @@
+<div class="cont-img">
+
+    <div [ngStyle]="{ display: validarImg? '' : 'none'}">
+        <img [src]="url" (load)="imgload()" class="card-img-top" alt="" />
+    </div>
+
+
+    <img *ngIf="!validarImg" src="assets/loaderImag.svg" class="imgLoader" alt="">
+</div>

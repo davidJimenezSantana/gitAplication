@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
-import { historyTagService } from '../../services/historyTag.service';
+import { Component, Input } from "@angular/core";
+import { gifService } from '../../services/gif.service';
+import { gif } from '../../interfaces/busquedaGifRespuesta.interface';
 
 @Component({
     selector: 'list-gif',
@@ -9,9 +10,14 @@ import { historyTagService } from '../../services/historyTag.service';
     templateUrl: 'lista.component.html'
 })
 export class listaComponen{
-    constructor(private historyTagService: historyTagService){}
+    @Input()
+    public listaGisfs:gif[] = []
+
+    //Inyección servicio
+    constructor(private gifService: gifService){}
 
     verHistorial():string[]{
-        return this.historyTagService.gethistoryTag();
+        return this.gifService.gethistoryTag();
     }
+    
 }

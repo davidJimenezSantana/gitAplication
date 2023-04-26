@@ -4,6 +4,7 @@
     border-radius: 10px;
     border       : 1px solid black;
     box-shadow   : 0px 2px 4px 0px #000000;
+    background-color: transparent;
 }
 
 .content-buscador {

@@ -1,0 +1,14 @@
+h5{
+    color: snow;
+}
+
+.cont-img{    
+    display: flex;
+    justify-content: center;
+}
+
+.imgLoader{
+    height:150px;
+    width: 150px;
+    padding: 15px;
+}
