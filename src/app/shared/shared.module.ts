@@ -7,9 +7,12 @@ import { CommonModule } from '@angular/common';
         loaderImageComponent
     ],
     exports:[
-        loaderImageComponent,
+        loaderImageComponent        
+    ],
+    imports:[
         CommonModule
     ]
+
 })
 export class sharedModule{
 

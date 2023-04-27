@@ -7,8 +7,9 @@ h5{
     justify-content: center;
 }
 
-.imgLoader{
-    height:150px;
-    width: 150px;
-    padding: 15px;
+
+
+.cont-img img{
+    height:215px;
+    width: 280px;
 }
